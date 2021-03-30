@@ -1,0 +1,16 @@
+version: '3.9'
+
+services:
+  ob-frontend:
+    container_name: ob-frontend
+    build:
+      context: .
+      dockerfile: Dockerfile.slim
+    image: ob-frontend:latest
+    ports: 
+      - "3000:3000"
+    tty: true 
+
+
+
+
